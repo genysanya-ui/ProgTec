@@ -45,9 +45,9 @@ Child::~Child() {
 
 void Child::print(std::ostream& os) const {
     Person::print(os);
-    os << "Father's Name: " << (fatherName ? fatherName : "Unknown") << std::endl;
-    os << "Mother's Name: " << (motherName ? motherName : "Unknown") << std::endl;
-    os << "Spouse's Name: " << (spouseName ? spouseName : "Unknown") << std::endl;
+    os << "Father's Name: " << (fatherName ? fatherName : "Unknown") << "\n";
+    os << "Mother's Name: " << (motherName ? motherName : "Unknown") << "\n";
+    os << "Spouse's Name: " << (spouseName ? spouseName : "Unknown") << "\n";
 }
 
 void Child::save(std::ofstream& ofs) const {

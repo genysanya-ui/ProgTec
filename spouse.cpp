@@ -72,9 +72,9 @@ const char* Spouse::getChildrenList() const {
 
 void Spouse::print(std::ostream& os) const {
     Person::print(os);
-    os << "Spouse Name: " << spouseName << std::endl;
-    os << "Marriage Date: " << marriageDate << std::endl;
-    os << "Children List: " << childrenList << std::endl;
+    os << "Spouse Name: " << spouseName << "\n";
+    os << "Marriage Date: " << marriageDate << "\n";
+    os << "Children List: " << childrenList << "\n";
 }
 
 void Spouse::save(std::ofstream& ofs) const {

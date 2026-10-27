@@ -66,9 +66,9 @@ const char* Parent::getChildrenList() const {
 
 void Parent::print(std::ostream& os) const {
     Person::print(os);
-    os << "Father's Name: " << fatherName << std::endl;
-    os << "Mother's Name: " << motherName << std::endl;
-    os << "Children List: " << childrenList << std::endl;
+    os << "Father's Name: " << fatherName << "\n";
+    os << "Mother's Name: " << motherName << "\n";
+    os << "Children List: " << childrenList << "\n";
 }
 
 void Parent::save(std::ofstream& ofs) const {
