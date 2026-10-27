@@ -1,7 +1,8 @@
-// Keeper - кдасс для хранения, сохранения и редактироывния данных
+// Keeper - класс для хранения, сохранения и редактирования данных
 #pragma once
-#include "Base.h"
+#include "base.h"
 #include <fstream>
+#include <string>
 
 class Keeper {
     Base** items;
@@ -23,5 +24,4 @@ public:
     void loadFromFile(const std::string& filename);
 
     void printAll(std::ostream& os) const;
-    void printByType(std::ostream& os, const char type) const;
 };

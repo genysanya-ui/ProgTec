@@ -13,7 +13,6 @@ class Base {
         virtual void load(std::ifstream& ifs) = 0;
 
         virtual const char* getName() const = 0;
-        virtual const char* getType() const = 0;
 
         friend std::ostream& operator<<(std::ostream& os, const Base& obj) {
             obj.print(os);
